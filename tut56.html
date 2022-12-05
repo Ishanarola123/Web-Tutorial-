@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        
+        <ul id="nav">
+            <li>home</li>
+            <li>aboutus</li>
+            <li>services</li>
+            <li>more about</li>
+            <li>contact us</li>
+        </ul>
+    </div>
+
+
+    <script>
+        //it takes main id contain in script with help of dom
+        let main=document.getElementById("main");
+        console.log(main);
+
+        let nav=document.getElementById("nav")
+        console.log(nav)
+
+        let container=document.getElementsByClassName("container")
+        console.log(container);
+
+        let select=document.querySelector("#nav>li")
+        console.log(select);
+        
+        let selectall=document.querySelectorAll("#nav>li")
+        console.log(selectall);
+    </script>
+</body>
+</html>

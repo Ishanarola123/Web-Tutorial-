@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set timeout and clear tutorial</title>
+
+</head>
+<body>
+
+    <div class="container">
+        <!-- <H1>this is a container </H1> -->
+        <p id="time"> this is time now</p>
+
+    </div>
+    
+    <script>
+        console.log("hello!!")
+
+        // setTimeout --> allows to run the function once after the interval time
+        // clearTimeout --> allows to run the function repetatly after the interval time
+
+        function greet(){
+            console.log("hello!!good morning ")
+        }
+
+        // setTimeout(greet,5000);
+
+
+        function displaytime(){
+            // time =  new date();
+            // console.log(time)
+            // document.getElementById(time).innerHTML=time;
+
+           let  a =document.getElementById(time);
+           console.log(a)
+
+        }
+
+        setInterval(displaytime,2000)
+    </script>
+</body>
+</html>
